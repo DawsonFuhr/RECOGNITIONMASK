@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mask recognition</title>
+    <script src="https://ajal-scale=1.0">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+     </head>
+     <body>
+        <div class="container">
+      
+      <center>
+    <h3 id="h3" class="btn btn-warning heading">RECOGNITION
+        <br>
+             
+            </h3>  
+            <div class="col-md-4 col-sm-12 col-xs-12"> 
+                <label>Webacm View - </label>
+           <div id="camera"></div>
+           <br>
+           <div id="result"></div>
+            <br><br>
+            <button id="butonn" onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+            <br>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label>Prediction- 1</label>
+              <p class="hand_sign" id="results_hand_sign"></p>
+              <p class="sign" id="update_hand"></p>
+    
+              <label>Prediction- 2</label>
+              <p class="hand_sign" id="results_hand_sign2"></p>
+              <p class="sign" id="update_hand2"></p>
+              </div>
+            <br>
+            <button id="buttondoo" onclick="check()">Predict</button>
+          </div>
+          <script src="main.js"></script>
+     </body>
+</html>
